@@ -1,0 +1,198 @@
+@import 'src/stylesheets/partials/_colors.scss';
+
+.clock-base {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  border: 10px solid $theme-background-color;
+  background-color: $theme-secondary-color;
+  border-radius: 50%;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.hours-rotating {
+  animation: rotating 43200s steps(60) infinite;
+}
+
+.minutes-rotating {
+  animation: rotating 3600s steps(60) infinite;
+}
+
+.seconds-rotating {
+  animation: rotating 60s steps(60) infinite;
+}
+
+.hours-hand,
+.minutes-hand,
+.seconds-hand {
+  border-radius: 5px;
+}
+
+.hours-container,
+.minutes-container,
+.seconds-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hours-container {
+  position: relative;
+  // top: 60px;
+  left: 52.5px;
+}
+
+.minutes-container {
+  position: relative;
+  // top: 40px;
+  left: 40px;
+}
+
+.seconds-container {
+  position: relative;
+  // top: 20px;
+  left: 32.5px;
+}
+
+.hours-hand {
+  background-color: $primary-color;
+  width: 15px;
+  height: 80px;
+}
+
+.minutes-hand {
+  background-color: $accent-color;
+  width: 10px;
+  height: 100px;
+}
+
+.seconds-hand {
+  background-color: $warn-color;
+  width: 5px;
+  height: 120px;
+}
+
+.hidden {
+  background-color: transparent;
+}
+
+.marker,
+.main-marker {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding: 2.5px;
+  // background-color: $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marker {
+  font-size: 20px;
+  color: $accent-color;
+}
+
+.main-marker {
+  font-size: 30px;
+  color: $primary-color;
+}
+
+.three {
+  position: relative;
+  left: 200px;
+  top: 40px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.six {
+  position: relative;
+  top: 40px;
+  left: 80px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.twelve {
+  position: relative;
+  left: 120px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.nine {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.one {
+  position: relative;
+  left: 130px;
+  top: 20px;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.two {
+  position: relative;
+  left: 180px;
+  top: 30px;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.four {
+  position: relative;
+  left: 180px;
+  top: 50px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.five {
+  position: relative;
+  left: 130px;
+  top: 60px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.seven {
+  position: relative;
+  left: 70px;
+  top: 20px;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.eight {
+  position: relative;
+  left: 20px;
+  top: 10px;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.ten {
+  position: relative;
+  left: 20px;
+  top: -10px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.eleven {
+  position: relative;
+  left: 70px;
+  top: -20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}

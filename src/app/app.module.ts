@@ -13,8 +13,9 @@ import {
   MatCardModule,
   MatIconModule
 } from '@angular/material';
+import { ClockComponent } from './clock/clock.component';
 
-const Components = [AppComponent, HomeComponent, PageNotFoundComponent];
+const Components = [AppComponent, HomeComponent, PageNotFoundComponent, ClockComponent];
 
 const MaterialModules = [MatButtonModule, MatCardModule, MatIconModule];
 
